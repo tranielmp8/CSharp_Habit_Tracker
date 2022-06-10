@@ -208,7 +208,7 @@ namespace habit_tracker
 
             string dateInput = Console.ReadLine();
 
-            if (dateInput == "") GetUserInput();
+            if (dateInput == "0") GetUserInput();
 
             while (!DateTime.TryParseExact(dateInput, "dd-MM-yy", new CultureInfo("en-US"), DateTimeStyles.None, out _))
             {
